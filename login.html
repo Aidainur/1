@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Войти - College Connect</title>
+    <style>
+        /* Общие стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header .logo img {
+            width: 120px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Основной контент */
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        .login-container h1 {
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .login-container input[type="submit"] {
+            background-color: #ffcc00;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #e0a800;
+        }
+
+        .login-container a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 14px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="materials.html">Учебные материалы</a></li>
+                <li><a href="forum.html">Форум</a></li>
+                <li><a href="events.html">События</a></li>
+                <li><a href="resources.html">Ресурсы</a></li>
+                <li><a href="login.html">Войти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login-container">
+            <h1>Войти</h1>
+            <form action="dashboard.html" method="POST">
+                <input type="text" name="username" placeholder="Логин" required>
+                <input type="password" name="password" placeholder="Пароль" required>
+                <input type="submit" value="Войти">
+            </form>
+            <a href="#">Забыли пароль?</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 College Connect. Все права защищены.</p>
+    </footer>
+</body>
+</html>
